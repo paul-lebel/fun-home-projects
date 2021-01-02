@@ -17,8 +17,6 @@ Text Label 3350 2175 0    50   ~ 0
 TXD0
 Text Label 3350 2275 0    50   ~ 0
 RXD0
-Text Label 3525 2375 2    50   ~ 0
-PWM_AUDIO_L
 Text Label 3525 3075 2    50   ~ 0
 SPI_CE1
 $Comp
@@ -1365,8 +1363,6 @@ Audio amplifiers
 Text Notes 6150 6325 0    50   ~ 0
 Factory reset
 NoConn ~ 7350 5550
-Wire Wire Line
-	2900 2375 3525 2375
 NoConn ~ 2900 3775
 NoConn ~ 2900 3675
 NoConn ~ 2900 3575
@@ -1418,11 +1414,11 @@ Power In
 Wire Wire Line
 	14700 8425 14700 8625
 NoConn ~ 2400 2375
-Text Label 1900 3175 0    50   ~ 0
+Text Label 1800 3175 0    50   ~ 0
 BTN_A
-Text Label 1900 3275 0    50   ~ 0
+Text Label 1800 3275 0    50   ~ 0
 BTN_B
-Text Label 1900 3375 0    50   ~ 0
+Text Label 1800 3375 0    50   ~ 0
 BTN_C
 Text Label 3525 2575 2    50   ~ 0
 BTN_D
@@ -1502,38 +1498,39 @@ NoConn ~ 7350 6650
 NoConn ~ 7350 6750
 Text Notes 1325 2975 0    50   ~ 0
 inky SCLK
-Text Notes 1325 2775 0    50   ~ 0
-inky MOSI
-Text Notes 1325 2375 0    50   ~ 0
-inky Busy
-Text Notes 1325 2475 0    50   ~ 0
-inky Reset
-Text Notes 1325 2575 0    50   ~ 0
-inky Data/Command
 Wire Wire Line
-	2400 3375 1900 3375
+	2400 3375 1800 3375
 Wire Wire Line
-	1900 3275 2400 3275
+	1800 3275 2400 3275
 Wire Wire Line
-	2400 3175 1900 3175
+	2400 3175 1800 3175
 NoConn ~ 2400 2475
 NoConn ~ 2400 2575
-Text Notes 1325 2275 0    50   ~ 0
-GND
-Text Notes 1325 2675 0    50   ~ 0
-3.3V
 NoConn ~ 2400 2675
 NoConn ~ 2400 1975
 NoConn ~ 2400 2075
-Text Notes 1325 2175 0    50   ~ 0
-GPCLK0
 NoConn ~ 2400 2175
-Text Notes 1325 2075 0    50   ~ 0
-inky I2C1 SCL
-Text Notes 1325 1975 0    50   ~ 0
-inky I2C1 SDA
 Text Notes 1325 3075 0    50   ~ 0
 GND
 Text Notes 3400 2075 0    50   ~ 0
 GND
+NoConn ~ 2900 2375
+Text Notes 1325 2775 0    50   ~ 0
+inky
+Text Notes 1325 2675 0    50   ~ 0
+3.3V
+Text Notes 1325 1975 0    50   ~ 0
+inky I2C1 SDA
+Text Notes 1325 2075 0    50   ~ 0
+inky I2C1 SCL
+Text Notes 1325 2175 0    50   ~ 0
+GPCLK0
+Text Notes 1325 2275 0    50   ~ 0
+GND
+Text Notes 1325 2575 0    50   ~ 0
+inky Data/Command
+Text Notes 1325 2475 0    50   ~ 0
+inky Reset
+Text Notes 1325 2375 0    50   ~ 0
+inky Busy
 $EndSCHEMATC
